@@ -32,7 +32,7 @@ const HomePage = () => {
                     spacing={10}
                     w={'full'}>
 
-                      {products.map((products) => (
+                      {products.map((product) => (
                         <ProductCard key={product._id} product={product} />
                       ))}
 
