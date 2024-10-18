@@ -34,7 +34,7 @@ export const useProductStore = create((set) => ({
     },
 
 
-    deleteProducts: async (pid) => {
+    deleteProduct: async (pid) => {
 
         const res = await fetch(`/api/products/${pid}`, {
             method: "DELETE",
