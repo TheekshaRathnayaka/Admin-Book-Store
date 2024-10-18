@@ -24,8 +24,9 @@ const HomePage = () => {
               fontWeight={"bold"}
               bgGradient={"linear(to-r, cyan.400, blue.500)"}
               bgClip={"text"}
-              textAlign={"center"}>
-          Current Books 🚀
+              textAlign={"center"}
+              mt={10}>
+          Current Books 📖
         </Text>
 
         <SimpleGrid columns={{base: 1, md: 2, lg: 3}}

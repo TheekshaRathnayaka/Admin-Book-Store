@@ -88,9 +88,12 @@ const ProductCard = ({ product }) => {
           overflow='hidden'
           transition='all 0.3s'
           _hover={{ transform: "translateY(-5px)", shadow: "xl" }}
-          bg={bg}>
+          bg={bg}
+		  width={{ base:"100%" , md:"70%"}}
+		  mx='auto'
+		  p={3}>
 
-      <Image src={product.image} alt={product.name} h={80} w='70%' mx='auto' objectFit='cover' />
+      <Image src={product.image} alt={product.name} h='auto' w='100%' objectFit='contain' />
 
       <Box p={4}>
 
@@ -99,7 +102,7 @@ const ProductCard = ({ product }) => {
 		</Heading>
 
         <Text fontWeight='bold' fontSize='xl' color={textColor} mb={4}>
-			${product.price}
+			LKR.{product.price}.00
 		</Text>
 
 		<HStack spacing={2}>

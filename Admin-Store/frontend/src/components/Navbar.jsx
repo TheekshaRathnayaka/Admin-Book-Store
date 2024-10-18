@@ -8,9 +8,20 @@ import { LuSun } from "react-icons/lu";
 const Navbar = () => {
 
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const bg = useColorModeValue("gray.300", "gray.600");
+  const color = useColorModeValue("gray.800", "white");
   
   return (
-    <Container maxW={"1140px"} px={4} >
+    <Container maxW={"1140px"} px={4} 
+               position='fixed'
+               top={0}
+               left={0}
+               right={0}
+               zIndex={10}
+               bg={bg}
+               color={color}
+               boxShadow='lg'>
 
       <Flex h={16}
             alignItems={"center"}
@@ -24,7 +35,9 @@ const Navbar = () => {
               bgGradient={"linear(to-r, cyan.400, blue.500)"}
               bgClip={"text"}>
 
-          <Link to={"/"}>Book Store 🛒</Link>
+          <Link to={"/"}>
+            Book Store 📖
+          </Link>
 
         </Text>
 
