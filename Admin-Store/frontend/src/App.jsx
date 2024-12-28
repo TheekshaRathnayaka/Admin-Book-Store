@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import CreatePage from "./pages/CreatePage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
+import FrontPage from "./pages/FrontPage";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       
       <Routes>
+        <Route path="/" element={<FrontPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
       </Routes>
