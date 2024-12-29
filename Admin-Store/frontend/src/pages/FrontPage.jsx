@@ -30,6 +30,9 @@ const FrontPage = () => {
         >
           Welcome to the Admin Book Store 📚
         </Text>
+        <Text fontSize="lg" color="gray.200">
+          Manage your collection of books with ease. Add, update, or delete books seamlessly.
+        </Text>
       </VStack>
     </Container>
     </Box>
