@@ -6,7 +6,7 @@ const FrontPage = () => {
   return (
     <Box
       height="100vh"
-      backgroundImage="url('https://www.freepik.com/free-photo/front-view-books-with-glasses_5207434.htm#fromView=search&page=1&position=40&uuid=8a94b0fb-7fe0-4847-ab77-35a1c3e08460&new_detail=true')"
+      backgroundImage="url('/src/front.jpg')"
       backgroundSize="cover"
       backgroundPosition="center"
       filter="blur(2px)"
@@ -33,6 +33,16 @@ const FrontPage = () => {
         <Text fontSize="lg" color="gray.200">
           Manage your collection of books with ease. Add, update, or delete books seamlessly.
         </Text>
+        <Link to="/home">
+        <Button
+          size="lg"
+          colorScheme="teal"
+          bgGradient="linear(to-r, teal.400, blue.500)"
+          _hover={{ bgGradient: "linear(to-r, blue.500, teal.400)" }}
+        >
+          Enter the Store
+        </Button>
+        </Link>
       </VStack>
     </Container>
     </Box>
