@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const FrontPage = () => {
   return (
+
     <Box
+      position="relative"
       height="100vh"
-      backgroundImage="url('/src/front.jpg')"
-      backgroundSize="cover"
-      backgroundPosition="center"
-      filter="blur(2px)"
-    >
+      width="100%"
+      backgroundImage="url('/src/front.jpg')">
+        
     <Box
         height="100vh"
         position="relative"
@@ -20,10 +20,9 @@ const FrontPage = () => {
         alignItems="center"
         justifyContent="center"
     >
-    <Container maxW="container.md" textAlign="center">
       <VStack spacing={6}>
         <Text
-          fontSize="4xl"
+          fontSize="5xl"
           fontWeight="bold"
           bgGradient="linear(to-r, cyan.400, blue.500)"
           bgClip="text"
@@ -44,7 +43,6 @@ const FrontPage = () => {
         </Button>
         </Link>
       </VStack>
-    </Container>
     </Box>
     </Box>
   );
