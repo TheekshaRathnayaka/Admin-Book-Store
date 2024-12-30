@@ -1,6 +1,7 @@
 import { Box, Button, Container, Heading, Input, useColorModeValue, useToast, VStack } from "@chakra-ui/react";
 import { useState } from "react";
 import { useProductStore } from "../store/product";
+import Navbar from "../components/Navbar";
 
 
 const CreatePage = () => {
@@ -41,6 +42,8 @@ const CreatePage = () => {
 	return (
 
 		<Container maxW={"container.sm"}>
+			
+			<Navbar />
 
 			<VStack spacing={8}>
 
