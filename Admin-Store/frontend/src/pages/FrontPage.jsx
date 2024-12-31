@@ -8,18 +8,21 @@ const FrontPage = () => {
     <Box
       position="relative"
       height="100vh"
-      width="100%"
-      backgroundImage="url('/src/front.jpg')">
+      width="100%">
         
     <Box
-        height="100vh"
-        position="relative"
-        backgroundColor="rgba(0, 0, 0, 0.6)"
-        color="white"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-    >
+        position="absolute"
+        top="0"
+        left="0"
+        right="0"
+        bottom="0"
+        backgroundImage="url('/front.jpg')"
+        backgroundSize="cover"
+        backgroundPosition="center"
+        filter="blur(5px)"
+        zIndex="-1"
+    />
+    
       <VStack spacing={6}>
         <Text
           fontSize="5xl"
@@ -43,7 +46,6 @@ const FrontPage = () => {
         </Button>
         </Link>
       </VStack>
-    </Box>
     </Box>
   );
 };
