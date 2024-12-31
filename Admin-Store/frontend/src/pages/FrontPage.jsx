@@ -8,8 +8,7 @@ const FrontPage = () => {
     <Box
       position="relative"
       height="100vh"
-      width="100%">
-        
+      width="100%"> 
     <Box
         position="absolute"
         top="0"
@@ -22,7 +21,15 @@ const FrontPage = () => {
         filter="blur(5px)"
         zIndex="-1"
     />
-    
+    <Container
+        maxW="container.md"
+        height="100%"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        textAlign="center"
+        color="white"
+      >
       <VStack spacing={6}>
         <Text
           fontSize="5xl"
@@ -46,6 +53,7 @@ const FrontPage = () => {
         </Button>
         </Link>
       </VStack>
+      </Container>
     </Box>
   );
 };
