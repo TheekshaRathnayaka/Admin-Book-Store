@@ -29,7 +29,7 @@ const HomePage = () => {
               bgClip={"text"}
               textAlign={"center"}
               mt={10}>
-          Current Books 📖
+          Current Books 📚
         </Text>
 
         <SimpleGrid columns={{base: 1, md: 2, lg: 3}}
