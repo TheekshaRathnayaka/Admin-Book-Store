@@ -23,7 +23,7 @@ const FrontPage = () => {
         zIndex="-1"
     />
     <Container
-        maxW="container.md"
+        maxW="auto"
         height="100%"
         display="flex"
         alignItems="center"
