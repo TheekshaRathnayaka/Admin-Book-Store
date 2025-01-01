@@ -8,15 +8,16 @@ const FrontPage = () => {
     <Box
       position="relative"
       height="100vh"
-      width="100%"> 
+      width="100vw"> 
     <Box
         position="absolute"
         top="0"
         left="0"
-        right="0"
-        bottom="0"
+        width="100vw"
+        height="100vh"
         backgroundImage="url('/front.jpg')"
         backgroundSize="cover"
+        backgroundRepeat="no-repeat"
         backgroundPosition="center"
         filter="blur(5px)"
         zIndex="-1"
