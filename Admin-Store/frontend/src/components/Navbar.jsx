@@ -36,7 +36,7 @@ const Navbar = () => {
               bgClip={"text"}>
 
           <Link to={"/"}>
-            Book Store 📖
+            Book Store 📚
           </Link>
 
         </Text>
