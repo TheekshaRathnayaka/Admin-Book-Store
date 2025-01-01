@@ -33,6 +33,14 @@ const FrontPage = () => {
       >
       <VStack spacing={6}>
         <Text
+          fontSize="8xl"
+          fontWeight="bold"
+          bgGradient="linear(to-r, cyan.400, blue.500)"
+          bgClip="text"
+        >
+          BookShelf 📖
+        </Text>
+        <Text
           fontSize="5xl"
           fontWeight="bold"
           bgGradient="linear(to-r, cyan.400, blue.500)"
