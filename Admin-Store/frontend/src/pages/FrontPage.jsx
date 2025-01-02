@@ -9,10 +9,10 @@ const FrontPage = () => {
       <Box
         position="fixed"
         top="0"
-        left="0"
-        right="0"
+        left="20"
+        right="20"
         zIndex="10"
-        bg="rgba(0, 0, 0, 0.7)"
+        bg="rgba(0, 0, 0, 0)"
         color="white"
         px={8}
         py={4}
@@ -25,10 +25,20 @@ const FrontPage = () => {
                 bgClip="text">
             BookShelf 📖
           </Text>
-          <HStack spacing={6}>
+          <HStack spacing={6} >
             <Link to="/home">
               <Button variant="ghost" colorScheme="teal">
                 Home
+              </Button>
+            </Link>
+            <Link to="/about">
+              <Button variant="ghost" colorScheme="teal">
+                About
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button variant="ghost" colorScheme="teal">
+                Contact
               </Button>
             </Link>
           </HStack>
