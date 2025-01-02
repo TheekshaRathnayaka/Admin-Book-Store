@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Container, Flex, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const FrontPage = () => {
@@ -25,6 +25,13 @@ const FrontPage = () => {
                 bgClip="text">
             BookShelf 📖
           </Text>
+          <HStack spacing={6}>
+            <Link to="/home">
+              <Button variant="ghost" colorScheme="teal">
+                Home
+              </Button>
+            </Link>
+          </HStack>
         </Flex>
       </Box>
     <Container
