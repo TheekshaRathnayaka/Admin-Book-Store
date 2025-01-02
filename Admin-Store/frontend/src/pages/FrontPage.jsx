@@ -8,20 +8,9 @@ const FrontPage = () => {
     <Box
       position="relative"
       height="100vh"
-      width="100vw"> 
-    <Box
-        position="absolute"
-        top="0"
-        left="0"
-        width="100vw"
-        height="100vh"
-        backgroundImage="url('/front.jpg')"
-        backgroundSize="cover"
-        backgroundRepeat="no-repeat"
-        backgroundPosition="center"
-        filter="blur(5px)"
-        zIndex="-1"
-    />
+      width="100vw"
+      overflow="hidden"
+    > 
     <Container
         maxW="auto"
         height="100%"
@@ -30,7 +19,7 @@ const FrontPage = () => {
         justifyContent="center"
         textAlign="center"
         color="white"
-      >
+    >
       <VStack spacing={6}>
         <Text
           fontSize="8xl"
