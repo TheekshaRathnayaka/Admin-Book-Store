@@ -1,16 +1,25 @@
 import React from "react";
-import { Box, Button, Container, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, Text, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const FrontPage = () => {
   return (
 
-    <Box
-      position="relative"
-      height="100vh"
-      width="100vw"
-      overflow="hidden"
-    > 
+    <Box position="relative" height="100vh" width="100vw" overflow="hidden">
+      <Box
+        position="fixed"
+        top="0"
+        left="0"
+        right="0"
+        zIndex="10"
+        bg="rgba(0, 0, 0, 0.7)"
+        color="white"
+        px={8}
+        py={4}
+        boxShadow="md"
+      >
+        
+      </Box>
     <Container
         maxW="auto"
         height="100%"
