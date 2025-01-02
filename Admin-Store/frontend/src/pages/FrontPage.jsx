@@ -18,7 +18,14 @@ const FrontPage = () => {
         py={4}
         boxShadow="md"
       >
-        
+        <Flex justifyContent="space-between" alignItems="center">
+          <Text fontSize="2xl"
+                fontWeight="bold"
+                bgGradient="linear(to-r, cyan.400, blue.500)"
+                bgClip="text">
+            BookShelf 📖
+          </Text>
+        </Flex>
       </Box>
     <Container
         maxW="auto"
