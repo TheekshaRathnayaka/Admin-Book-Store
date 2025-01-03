@@ -83,6 +83,7 @@ const FrontPage = () => {
           Enter the Store
         </Button>
         </Link>
+        <Box pt={4}></Box>
       </VStack>
       </Container>
     </Box>
