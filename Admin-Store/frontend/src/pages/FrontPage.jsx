@@ -84,7 +84,9 @@ const FrontPage = () => {
         </Button>
         </Link>
         <Box pt={4}>
-          <Image src="https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=585a84b2-b348-47dd-bfc4-9e5893fdf9cc&new_detail=true"/>
+          <Image src="https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=585a84b2-b348-47dd-bfc4-9e5893fdf9cc&new_detail=true"
+                  alt="Book store"
+                  boxSize={{base:"200px", md:"300px"}}/>
         </Box>
       </VStack>
       </Container>
