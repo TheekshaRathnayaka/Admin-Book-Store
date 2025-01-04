@@ -26,19 +26,19 @@ const FrontPage = () => {
             BookShelf 📖
           </Text>
           <HStack spacing={6} >
-            <Link to="/home">
+            <Link to="/">
               <Button variant="ghost" colorScheme="teal">
                 Home
               </Button>
             </Link>
-            <Link to="/about">
+            <Link to="/home">
               <Button variant="ghost" colorScheme="teal">
-                About
+                Store
               </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/help">
               <Button variant="ghost" colorScheme="teal">
-                Contact
+                Help
               </Button>
             </Link>
           </HStack>
