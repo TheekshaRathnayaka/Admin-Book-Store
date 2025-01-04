@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Container, Flex, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Container, Flex, HStack, Text, VStack, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const FrontPage = () => {
@@ -84,9 +84,10 @@ const FrontPage = () => {
         </Button>
         </Link>
         <Box pt={4}>
-          <Image src="https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=585a84b2-b348-47dd-bfc4-9e5893fdf9cc&new_detail=true"
+          <Image src="/books.jpg"
                   alt="Book store"
-                  boxSize={{base:"200px", md:"300px"}}/>
+                  boxSize={{base:"300px", md:"400px"}}
+                  objectFit="contain"/>
         </Box>
       </VStack>
       </Container>
