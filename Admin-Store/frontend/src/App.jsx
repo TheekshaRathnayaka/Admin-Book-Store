@@ -4,6 +4,7 @@ import CreatePage from "./pages/CreatePage";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import FrontPage from "./pages/FrontPage";
+import HelpPage from "./pages/HelpPage";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<FrontPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
+        <Route path="/help" element={<HelpPage />} />
       </Routes>
 
     </Box>
