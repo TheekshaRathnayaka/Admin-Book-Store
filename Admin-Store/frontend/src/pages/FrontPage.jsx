@@ -1,49 +1,13 @@
 import React from "react";
 import { Box, Button, Container, Flex, HStack, Text, VStack, Image } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import MainNavbar from "../components/MainNavbar";
 
 const FrontPage = () => {
   return (
 
     <Box position="relative" height="100vh" width="100vw" overflow="hidden">
-      <Box
-        position="fixed"
-        top="0"
-        left="20"
-        right="20"
-        zIndex="10"
-        bg="rgba(0, 0, 0, 0)"
-        color="white"
-        px={8}
-        py={4}
-        boxShadow="md"
-      >
-        <Flex justifyContent="space-between" alignItems="center">
-          <Text fontSize="2xl"
-                fontWeight="bold"
-                bgGradient="linear(to-r, cyan.400, blue.500)"
-                bgClip="text">
-            BookShelf 📖
-          </Text>
-          <HStack spacing={6} >
-            <Link to="/">
-              <Button variant="ghost" colorScheme="teal">
-                Home
-              </Button>
-            </Link>
-            <Link to="/home">
-              <Button variant="ghost" colorScheme="teal">
-                Store
-              </Button>
-            </Link>
-            <Link to="/help">
-              <Button variant="ghost" colorScheme="teal">
-                Help
-              </Button>
-            </Link>
-          </HStack>
-        </Flex>
-      </Box>
+      <MainNavbar />
     <Container
         maxW="auto"
         height="100%"
