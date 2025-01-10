@@ -1,4 +1,4 @@
-import { Box, Container, Heading, VStack, Text, Accordion, AccordionItem, AccordionButton } from '@chakra-ui/react'
+import { Box, Container, Heading, VStack, Text, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from '@chakra-ui/react'
 import React from 'react'
 import MainNavbar from '../components/MainNavbar'
 
@@ -21,13 +21,48 @@ const HelpPage = () => {
           Frequently Asked Questions
         </Heading>
         <Accordion allowMultiple>
+
           <AccordionItem>
             <h2>
               <AccordionButton>
-                
+                <Box flex="1" textAlign="left" fontWeight="bold">
+                  How do I add a new book to the store?
+                </Box>
+                <AccordionIcon />
               </AccordionButton>
             </h2>
+            <AccordionPanel pb={4}>
+              To add a new book, go to the "Store" section and click on the "+ icon" button. Fill out the form with the book's details, then click "Add Book".
+            </AccordionPanel>
           </AccordionItem>
+
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex="1" textAlign="left" fontWeight="bold">
+                  How do I edit book details?
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              Locate the book in the "Store" section, click on the "Edit icon" button, change the necessary details, and "Update" your changes.            </AccordionPanel>
+          </AccordionItem>
+
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex="1" textAlign="left" fontWeight="bold">
+                  How do I delete a book from the store?
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              Find the book you want to remove in the "Store" section, then click the "Delete" button.
+            </AccordionPanel>
+          </AccordionItem>
+
         </Accordion>
       </Container>
     </Box>
