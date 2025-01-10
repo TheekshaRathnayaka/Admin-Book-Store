@@ -1,4 +1,4 @@
-import { Box, Container, Heading, VStack, Text } from '@chakra-ui/react'
+import { Box, Container, Heading, VStack, Text, Accordion, AccordionItem, AccordionButton } from '@chakra-ui/react'
 import React from 'react'
 import MainNavbar from '../components/MainNavbar'
 
@@ -20,6 +20,15 @@ const HelpPage = () => {
         <Heading size="lg" mb={6} color="blue.600">
           Frequently Asked Questions
         </Heading>
+        <Accordion allowMultiple>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                
+              </AccordionButton>
+            </h2>
+          </AccordionItem>
+        </Accordion>
       </Container>
     </Box>
   )
