@@ -1,6 +1,7 @@
 import { Box, Container, Heading, VStack, Text, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from '@chakra-ui/react'
 import React from 'react'
 import MainNavbar from '../components/MainNavbar'
+import { Link } from 'react-router-dom'
 
 const HelpPage = () => {
   return (
@@ -71,6 +72,9 @@ const HelpPage = () => {
           <Text fontSize="md" color="gray.600">
             If you couldn't find the answer to your question, feel free to reach out to us.
           </Text>
+          <Link href="mailto:support@bookshelf.com" color="teal.500" fontSize="lg">
+            support@bookshelf.com
+          </Link>
         </VStack>
       </Container>
     </Box>
