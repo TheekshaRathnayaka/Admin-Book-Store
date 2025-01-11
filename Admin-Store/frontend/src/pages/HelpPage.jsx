@@ -68,6 +68,9 @@ const HelpPage = () => {
           <Heading size="md" color="blue.600">
             Need Further Assistance?
           </Heading>
+          <Text fontSize="md" color="gray.600">
+            If you couldn't find the answer to your question, feel free to reach out to us.
+          </Text>
         </VStack>
       </Container>
     </Box>
