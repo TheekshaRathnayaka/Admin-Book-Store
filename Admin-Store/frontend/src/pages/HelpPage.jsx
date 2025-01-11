@@ -62,8 +62,13 @@ const HelpPage = () => {
               Find the book you want to remove in the "Store" section, then click the "Delete" button.
             </AccordionPanel>
           </AccordionItem>
-
         </Accordion>
+
+        <VStack spacing={4} mt={10} textAlign="center">
+          <Heading size="md" color="blue.600">
+            Need Further Assistance?
+          </Heading>
+        </VStack>
       </Container>
     </Box>
   )
