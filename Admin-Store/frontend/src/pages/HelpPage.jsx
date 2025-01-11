@@ -1,4 +1,4 @@
-import { Box, Container, Heading, VStack, Text, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel } from '@chakra-ui/react'
+import { Box, Container, Heading, VStack, Text, Accordion, AccordionItem, AccordionButton, AccordionIcon, AccordionPanel, Button } from '@chakra-ui/react'
 import React from 'react'
 import MainNavbar from '../components/MainNavbar'
 import { Link } from 'react-router-dom'
@@ -75,10 +75,16 @@ const HelpPage = () => {
           <Link href="mailto:support@bookshelf.com" color="teal.500" fontSize="lg">
             support@bookshelf.com
           </Link>
+          <Button size="lg"
+                  colorScheme='teal'
+                  bgGradient="linear(to-r, teal.400, blue.500)"
+                  _hover={{ bgGradient: "linear(to-r, blue.500, teal.400)" }}>
+            Contact Support
+          </Button>
         </VStack>
       </Container>
     </Box>
   )
 }
 
-export default HelpPage
+export default HelpPage;
