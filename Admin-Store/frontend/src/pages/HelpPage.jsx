@@ -25,8 +25,8 @@ const HelpPage = () => {
 
           <AccordionItem>
             <h2>
-              <AccordionButton>
-                <Box flex="1" textAlign="left" fontWeight="bold">
+              <AccordionButton fontSize="lg" fontWeight="bold" p={5} _expanded={{ bg: "blue.50" }}>
+                <Box flex="1" textAlign="left">
                   How do I add a new book to the store?
                 </Box>
                 <AccordionIcon />
@@ -84,7 +84,7 @@ const HelpPage = () => {
         </VStack>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
 export default HelpPage;
