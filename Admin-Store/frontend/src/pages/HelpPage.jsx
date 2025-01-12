@@ -32,7 +32,7 @@ const HelpPage = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}>
+            <AccordionPanel pb={4} fontSize="18px">
               To add a new book, go to the "Store" section and click on the "+ icon" button. Fill out the form with the book's details, then click "Add Book".
             </AccordionPanel>
           </AccordionItem>
@@ -46,7 +46,7 @@ const HelpPage = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}>
+            <AccordionPanel pb={4} fontSize="18px">
               Locate the book in the "Store" section, click on the "Edit icon" button, change the necessary details, and "Update" your changes.            </AccordionPanel>
           </AccordionItem>
 
@@ -59,7 +59,7 @@ const HelpPage = () => {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}>
+            <AccordionPanel pb={4} fontSize="18px">
               Find the book you want to remove in the "Store" section, then click the "Delete" button.
             </AccordionPanel>
           </AccordionItem>
