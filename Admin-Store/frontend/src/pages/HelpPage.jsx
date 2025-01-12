@@ -69,7 +69,7 @@ const HelpPage = () => {
           <Heading size="md" color="blue.600">
             Need Further Assistance?
           </Heading>
-          <Text fontSize="md" color="gray.600">
+          <Text fontSize="18px" color="gray.600">
             If you couldn't find the answer to your question, feel free to reach out to us.
           </Text>
           <Link href="mailto:support@bookshelf.com" color="teal.500" fontSize="lg">
