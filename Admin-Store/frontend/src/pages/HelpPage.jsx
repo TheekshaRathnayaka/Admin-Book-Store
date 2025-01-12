@@ -39,8 +39,8 @@ const HelpPage = () => {
 
           <AccordionItem>
             <h2>
-              <AccordionButton>
-                <Box flex="1" textAlign="left" fontWeight="bold">
+              <AccordionButton fontSize="lg" fontWeight="bold" p={5} _expanded={{ bg: "blue.50" }}>
+                <Box flex="1" textAlign="left">
                   How do I edit book details?
                 </Box>
                 <AccordionIcon />
@@ -52,8 +52,8 @@ const HelpPage = () => {
 
           <AccordionItem>
             <h2>
-              <AccordionButton>
-                <Box flex="1" textAlign="left" fontWeight="bold">
+              <AccordionButton fontSize="lg" fontWeight="bold" p={5} _expanded={{ bg: "blue.50" }}>
+                <Box flex="1" textAlign="left">
                   How do I delete a book from the store?
                 </Box>
                 <AccordionIcon />
