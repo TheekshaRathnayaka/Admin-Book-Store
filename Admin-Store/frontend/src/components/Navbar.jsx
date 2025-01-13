@@ -32,16 +32,14 @@ const Navbar = () => {
               textTransform={"uppercase"}
               textAlign={"center"}
               bgGradient={"linear(to-r, cyan.400, blue.500)"}
-              bgClip={"text"}>
-
+              bgClip={"text"}
+        >
           <Link to={"/home"}>
             Book Store 📚
           </Link>
-
         </Text>
 
         <HStack spacing={2} alignItems={"center"}>
-
           <Link to="/">
             <Button variant="ghost" colorScheme="teal">
               Home
@@ -52,7 +50,6 @@ const Navbar = () => {
               <PlusSquareIcon fontSize={20} />
             </Button>
           </Link>
-
           <Button onClick={toggleColorMode}>
             {colorMode === "light"? <IoMoon />: <LuSun size='20' />}
           </Button>

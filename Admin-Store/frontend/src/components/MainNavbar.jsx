@@ -1,8 +1,12 @@
 import React from 'react'
-import { Box, Flex, Text, HStack, Button } from '@chakra-ui/react';
+import { Box, Flex, Text, HStack, Button, useDisclosure, IconButton } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 
 const MainNavbar = () => {
+
+  const { isOpen, onToggle } = useDisclosure();
+
   return (
       <Box
               position="fixed"
@@ -23,7 +27,7 @@ const MainNavbar = () => {
                       bgClip="text">
                   BookShelf 📖
                 </Text>
-                <HStack spacing={6} >
+                <HStack as="nav" spacing={6} display={{base:'none', md:'flex'}}>
                   <Link to="/">
                     <Button variant="ghost" colorScheme="teal">
                       Home
@@ -40,6 +44,15 @@ const MainNavbar = () => {
                     </Button>
                   </Link>
                 </HStack>
+
+                <IconButton 
+                  aria-label='Open Menu'
+                  icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                  display={{ base:'flex', md:'none' }}
+                  onClick={onToggle}
+                  variant='ghost'
+                  colorScheme='teal'
+                />
               </Flex>
             </Box>
   )
