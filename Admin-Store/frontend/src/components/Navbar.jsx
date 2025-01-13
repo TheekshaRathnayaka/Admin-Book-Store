@@ -22,12 +22,11 @@ const Navbar = () => {
                bg={bg}
                color={color}
                boxShadow='lg'>
-
       <Flex h={16}
             alignItems={"center"}
             justifyContent={"space-between"}
-            flexDir={{base:"column", sm:"row"}} >
-
+            flexDir={{base:"column", sm:"row"}} 
+      >
         <Text fontSize={{base:"22", sm:"28"}}
               fontWeight={"bold"}
               textTransform={"uppercase"}
@@ -43,6 +42,11 @@ const Navbar = () => {
 
         <HStack spacing={2} alignItems={"center"}>
 
+          <Link to="/">
+            <Button variant="ghost" colorScheme="teal">
+              Home
+            </Button>
+          </Link>
           <Link to={"/create"}>
             <Button>
               <PlusSquareIcon fontSize={20} />
