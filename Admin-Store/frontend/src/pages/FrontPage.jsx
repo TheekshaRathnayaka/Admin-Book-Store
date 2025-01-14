@@ -9,17 +9,18 @@ const FrontPage = () => {
     <Box position="relative" height="100vh" width="100vw" overflow="hidden">
       <MainNavbar />
     <Container
-        maxW="auto"
+        maxW="container.xl"
         height="100%"
         display="flex"
         alignItems="center"
         justifyContent="center"
         textAlign="center"
         color="white"
+        px={{ base: 4, md: 8 }}
     >
-      <VStack spacing={6}>
+      <VStack spacing={{ base: 4, md: 6 }}>
         <Text
-          fontSize="8xl"
+          fontSize={{ base: "4xl", md: "6xl", lg: "8xl" }}
           fontWeight="bold"
           bgGradient="linear(to-r, cyan.400, blue.500)"
           bgClip="text"
@@ -27,14 +28,14 @@ const FrontPage = () => {
           BookShelf 📖
         </Text>
         <Text
-          fontSize="5xl"
+          fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
           fontWeight="bold"
           bgGradient="linear(to-r, cyan.400, blue.500)"
           bgClip="text"
         >
           Welcome to the Admin Book Store 📚
         </Text>
-        <Text fontSize="lg" color="blue.400">
+        <Text fontSize={{ base: "md", md: "lg" }} color="blue.400">
           Manage your collection of books with ease. Add, update, or delete books seamlessly.
         </Text>
         <Link to="/home">
