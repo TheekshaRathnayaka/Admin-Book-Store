@@ -55,20 +55,30 @@ const MainNavbar = () => {
                 />
               </Flex>
 
-              <Collapse in={isOpen} animateOpacity>
-                <VStack as='nav'
-                        spacing={4}
-                        mt={4}
-                        align='start'
-                        display={{ md:'none' }}>
-                  <Link to="/" onClick={onToggle}>
-                    <Button variant="ghost" colorScheme="teal" w='100%'>
-                      Home
-                    </Button>
-                  </Link>
-                </VStack>
-              </Collapse>
-            </Box>
+      <Collapse in={isOpen} animateOpacity>
+        <VStack as='nav'
+                spacing={4}
+                mt={4}
+                align='start'
+                display={{ md:'none' }}>
+          <Link to="/" onClick={onToggle}>
+            <Button variant="ghost" colorScheme="teal" w='100%'>
+              Home
+            </Button>
+          </Link>
+          <Link to="/home" onClick={onToggle}>
+            <Button variant="ghost" colorScheme="teal" w="100%">
+              Store
+            </Button>
+          </Link>
+          <Link to="/help" onClick={onToggle}>
+            <Button variant="ghost" colorScheme="teal" w="100%">
+              Help
+            </Button>
+          </Link>
+        </VStack>
+      </Collapse>
+    </Box>
   )
 }
 
