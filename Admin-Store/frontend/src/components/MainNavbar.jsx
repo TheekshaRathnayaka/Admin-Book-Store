@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Text, HStack, Button, useDisclosure, IconButton } from '@chakra-ui/react';
+import { Box, Flex, Text, HStack, Button, useDisclosure, IconButton, Collapse, VStack } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 
@@ -54,6 +54,20 @@ const MainNavbar = () => {
                   colorScheme='teal'
                 />
               </Flex>
+
+              <Collapse in={isOpen} animateOpacity>
+                <VStack as='nav'
+                        spacing={4}
+                        mt={4}
+                        align='start'
+                        display={{ md:'none' }}>
+                  <Link to="/" onClick={onToggle}>
+                    <Button variant="ghost" colorScheme="teal" w='100%'>
+                      Home
+                    </Button>
+                  </Link>
+                </VStack>
+              </Collapse>
             </Box>
   )
 }
