@@ -51,7 +51,7 @@ const FrontPage = () => {
         <Box pt={4}>
           <Image src="/books.jpg"
                   alt="Book store"
-                  boxSize={{base:"300px", md:"400px"}}
+                  boxSize={{ base: "200px", md: "300px", lg: "400px" }}
                   objectFit="contain"/>
         </Box>
       </VStack>
