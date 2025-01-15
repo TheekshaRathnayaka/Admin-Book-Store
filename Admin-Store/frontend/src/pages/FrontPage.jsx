@@ -6,7 +6,7 @@ import MainNavbar from "../components/MainNavbar";
 const FrontPage = () => {
   return (
 
-    <Box position="relative" height="100vh" width="100vw" overflow="hidden">
+    <Box position="relative" height="100vh" width="100vw" overflow="hidden" pt="80px">
       <MainNavbar />
     <Container
         maxW="container.xl"
