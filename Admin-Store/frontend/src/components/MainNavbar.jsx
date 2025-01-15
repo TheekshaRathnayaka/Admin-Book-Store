@@ -11,17 +11,17 @@ const MainNavbar = () => {
       <Box
               position="fixed"
               top="0"
-              left="20"
-              right="20"
+              left="0"
+              right="0"
               zIndex="10"
-              bg="rgba(0, 0, 0, 0)"
+              bg="rgba(244, 241, 241, 0.97)"
               color="white"
               px={8}
               py={4}
               boxShadow="md"
             >
               <Flex justifyContent="space-between" alignItems="center">
-                <Text fontSize="2xl"
+                <Text fontSize={{ base: "1xl", lg: "2xl" }}
                       fontWeight="bold"
                       bgGradient="linear(to-r, cyan.400, blue.500)"
                       bgClip="text">
