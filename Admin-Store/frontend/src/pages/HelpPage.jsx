@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const HelpPage = () => {
   return (
-    <Box bg="gray.50" minHeight="100vh" py={20} px={5}>
+    <Box bg="gray.50" minHeight="100vh" py={{ base: 24, md: 20 }} px={5} pt={{ base: "100px", md: "180px" }} >
       <MainNavbar />
       <Container maxW="container.lg">
         <VStack spacing={6} mb={10} textAlign="center">
