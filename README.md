@@ -10,4 +10,4 @@ There user can set interface into dark mode.
 Admin can add books using the form by click on add icon.
 ![GB5](https://github.com/user-attachments/assets/5e786524-c525-4414-8693-d9658f40d3f9)
 Using update icon on book card, admin can update and save book details.
-![Uploading GB6.PNG…]()
+![GB6](https://github.com/user-attachments/assets/be2c4227-671f-4c8e-acc7-2d38537d3312)
