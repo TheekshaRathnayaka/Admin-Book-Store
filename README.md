@@ -5,7 +5,8 @@ If no books found, interface will show like this.
 ![GB2](https://github.com/user-attachments/assets/436605c9-a258-4e44-bd85-7612d3d0f4ef)
 After adding, store will show like this.
 ![GB3](https://github.com/user-attachments/assets/9f3d5de5-3084-42da-808f-2bea419463f7)
-There user can set interface into dark mode.
+There user can set interface into dark mode.</br>
+Delete books using delete icon.
 ![GB4](https://github.com/user-attachments/assets/f90a0eb4-0292-4958-868a-9640d2e6171d)
 Admin can add books using the form by click on add icon.
 ![GB5](https://github.com/user-attachments/assets/5e786524-c525-4414-8693-d9658f40d3f9)
